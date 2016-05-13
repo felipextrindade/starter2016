@@ -13,23 +13,20 @@
 	<div class="mainDiv" align="center">
 		<h1 id="title-table">New/Edit Contact</h1>
 		<form:form action="saveContact" method="post" modelAttribute="contact">
-		<table width="1000px">
+		<table>
 			<form:hidden path="id"/>
 			<tr>
-				<td>Name:</td>
-				<td><form:input path="name" /></td>
+				<td><form:input path="name" placeholder="Name" /></td>
+				
 			</tr>
 			<tr>
-				<td>Email:</td>
-				<td><form:input path="email" /></td>
+				<td><form:input path="email" placeholder="Email" /></td>
 			</tr>
 			<tr>
-				<td>Address:</td>
-				<td><form:input path="address" /></td>
+				<td><form:input path="address" placeholder="Address"/></td>
 			</tr>
 			<tr>
-				<td>Telephone:</td>
-				<td><form:input path="telephone" /></td>
+				<td><form:input path="telephone" placeholder="Telephone"/></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="Save"></td>

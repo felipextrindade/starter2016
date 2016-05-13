@@ -33,7 +33,6 @@
 					<td>${contact.telephone}</td>
 					<td>
 						<a id="edit" href="editContact?id=${contact.id}">Edit</a>
-						
 						<a id="delete" class=""href="deleteContact?id=${contact.id}">Delete</a>
 					</td>
 							

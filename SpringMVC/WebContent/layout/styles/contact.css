@@ -6,6 +6,10 @@ body {
 	font-family: 'Helvetica', sans-serif;
 }
 
+h1 {
+	color: #213e7f;
+}
+
 #edit{
 	padding: 10px;
 	background-color: #213e7f;
@@ -33,6 +37,7 @@ body {
 
 #delete:hover{
 	opacity: 0.9;
+	background-color: #B62F13;
 
 }
 
@@ -55,6 +60,32 @@ body {
 	margin: 10px auto;
 }
 
+input {
+	font-size: 15px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0.5s ease; 
+}
+
+input[type=submit]:hover {
+	background-color: #647bac;
+	color: white;
+}
+
 #CreateContact a{
 	text-decoration: none;
 	color: white;
@@ -65,5 +96,14 @@ body {
 }
 
 #CreateContact a:hover{
-	background-color: #90B1F7;
+	opacity: 0.9;
+}
+
+input, textarea, select, button {
+  width : 150px;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
 }
