@@ -6,8 +6,27 @@ body {
 	font-family: 'Helvetica', sans-serif;
 }
 
+.mainDiv {
+	width: 70%;
+	height: auto;
+	border-bottom: 1px solid #ccc;
+	border-radius: 1px;
+	margin: 10px auto;
+}
+
 h1 {
 	color: #213e7f;
+}
+
+#mainTable th, td {
+	padding: 20px;
+	
+}
+
+
+#mainTable thead tr th {
+	border-bottom: solid;
+	border-color: #90B1F7;
 }
 
 #edit{
@@ -41,24 +60,19 @@ h1 {
 
 }
 
-#mainTable th, td {
-	padding: 20px;
-	
+#CreateContact a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	background-color: #647bac;
+	border-radius: 5px;
+	transition: all 0.5s ease;
 }
 
-
-#mainTable thead tr th {
-	border-bottom: solid;
-	border-color: #90B1F7;
+#CreateContact a:hover{
+	opacity: 0.9;
 }
 
-.mainDiv {
-	width: 70%;
-	height: auto;
-	border-bottom: 1px solid #ccc;
-	border-radius: 1px;
-	margin: 10px auto;
-}
 
 input {
 	font-size: 15px;
@@ -69,6 +83,21 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none; 
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder {
+   color: black;
+}
+
+::-moz-placeholder {
+   color: black;
 }
 
 input[type=submit] {
@@ -78,25 +107,13 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
+   
 }
 
 input[type=submit]:hover {
 	background-color: #647bac;
 	color: white;
-}
-
-#CreateContact a{
-	text-decoration: none;
-	color: white;
-	padding: 5px;
-	background-color: #647bac;
-	border-radius: 5px;
-	transition: background-color 0.5s ease;
-}
-
-#CreateContact a:hover{
-	opacity: 0.9;
 }
 
 input, textarea, select, button {
