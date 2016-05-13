@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-image: url('../img/background.png');
+	margin: 0px;
+	font-family: 'Helvetica', sans-serif;
+}
+
+#edit{
+	padding: 2px 4px 2px 4px;
+	background-color: #213e7f;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 5px;
+	margin: 0;	
+}
+
+#delete{
+	padding: 2px 4px 2px 4px;
+	background-color: #213e7f;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 5px;
+
+}
+
+#mainTable th, td {
+	padding: 20px;
+	
+}
+
+
+#mainTable thead tr th {
+	border-bottom: solid;
+	border-color: #90B1F7;
+}
+
+.mainDiv {
+	width: 70%;
+	height: auto;
+	border: solid;
+	border-radius: 20px;
+	margin: 10px auto;
+}
+
+#CreateContact a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	background-color: #666666;
+	border-radius: 5px;
+}
+
+#CreateContact a:hover{
+	background-color: #90B1F7;
+	-webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;
+    -webkit-transition-delay: 4s; /* Safari */
+    transition-delay: 4s;
+}
