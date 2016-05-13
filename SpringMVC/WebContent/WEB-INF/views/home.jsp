@@ -10,7 +10,6 @@
         <title>Contact Manager Home</title>
     </head>
     <body>
-    	<center>
     	<div class="mainDiv"align="center">
 	        <h1>Contact List</h1>
 	        <h3 id="CreateContact"><a href="newContact">New Contact</a></h3>
@@ -42,6 +41,5 @@
 				</c:forEach>	        	
 			</table>
     	</div>
-    	</center>
     </body>
 </html>
