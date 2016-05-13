@@ -6,13 +6,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="layout/styles/contact.css" rel="stylesheet" type="text/css" media="all">
 <title>New/Edit Contact</title>
 </head>
 <body>
-	<div align="center">
-		<h1>New/Edit Contact</h1>
+	<div class="mainDiv" align="center">
+		<h1 id="title-table">New/Edit Contact</h1>
 		<form:form action="saveContact" method="post" modelAttribute="contact">
-		<table>
+		<table width="1000px">
 			<form:hidden path="id"/>
 			<tr>
 				<td>Name:</td>

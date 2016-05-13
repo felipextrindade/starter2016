@@ -5,21 +5,26 @@
 
 <html>
     <head>
+    	<link href="layout/styles/contact.css" rel="stylesheet" type="text/css" media="all">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Contact Manager Home</title>
     </head>
     <body>
-    	<div align="center">
+    	<center>
+    	<div class="mainDiv"align="center">
 	        <h1>Contact List</h1>
-	        <h3><a href="newContact">New Contact</a></h3>
-	        <table border="1">
-	        	<th>No</th>
-	        	<th>Name</th>
-	        	<th>Email</th>
-	        	<th>Address</th>
-	        	<th>Telephone</th>
-	        	<th>Action</th>
-	        	
+	        <h3 id="CreateContact"><a href="newContact">New Contact</a></h3>
+	        <table id="mainTable">
+	        <thead>
+	        	<tr>
+		        	<th>No</th>
+		        	<th>Name</th>
+		        	<th>Email</th>
+		        	<th>Address</th>
+		        	<th>Telephone</th>
+		        	<th>Action</th>
+	        	</tr>
+	        </thead>	        	
 				<c:forEach var="contact" items="${listContact}" varStatus="status">
 	        	<tr>
 	        		<td>${status.index + 1}</td>
@@ -28,14 +33,15 @@
 					<td>${contact.address}</td>
 					<td>${contact.telephone}</td>
 					<td>
-						<a href="editContact?id=${contact.id}">Edit</a>
-						&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="deleteContact?id=${contact.id}">Delete</a>
+						<a id="edit" href="editContact?id=${contact.id}">Edit</a>
+						
+						<a id="delete" class=""href="deleteContact?id=${contact.id}">Delete</a>
 					</td>
 							
 	        	</tr>
 				</c:forEach>	        	
 			</table>
     	</div>
+    	</center>
     </body>
 </html>
