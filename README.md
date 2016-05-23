@@ -1,3 +1,6 @@
+GFT 2016 Starter Project.
+Original Author: Arllen Lira 
+
 # SpringMVC
 A web application using Spring  with MVC.
 
