@@ -40,5 +40,6 @@
 				</c:forEach>	        	
 			</table>
     	</div>
+    	<center><a class=" button edit" href="index.html">Voltar</a></center>
     </body>
 </html>
