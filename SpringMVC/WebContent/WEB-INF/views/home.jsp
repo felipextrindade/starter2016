@@ -40,6 +40,6 @@
 				</c:forEach>	        	
 			</table>
     	</div>
-    	<center><a class=" button edit" href="index_html">Voltar</a></center>
+    	<center><a class=" button edit" href="#">Voltar</a></center>
     </body>
 </html>
