@@ -10,6 +10,7 @@
         <title>Contact Manager Home</title>
     </head>
     <body>
+    	<br>
     	<div class="mainDiv"align="center">
 	        <h1>Contact List</h1>
 	        <h3 id="CreateContact"><a href="newContact">New Contact</a></h3>
