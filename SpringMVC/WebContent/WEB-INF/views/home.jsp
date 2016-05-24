@@ -40,6 +40,7 @@
 				</c:forEach>	        	
 			</table>
     	</div>
-    	<center><a class=" button edit" href="#">Voltar</a></center>
+    	<br><br>
+    	<center><a class=" button edit" href="http://localhost:8090/SpringMVC/">Voltar</a></center>
     </body>
 </html>
