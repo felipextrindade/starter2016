@@ -7,12 +7,12 @@
     <head>
     	<link href="layout/styles/contact.css" rel="stylesheet" type="text/css" media="all">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="layout/scripts/jquery-min.js"></script>
         <link rel="stylesheet" href="layout/styles/remodal.css" rel="stylesheet" type="text/css" media="all">
 	    <link rel="stylesheet" href="layout/styles/remodal-default-theme.css" rel="stylesheet" type="text/css" media="all">
 	       <title>Contact Manager Home</title>
     </head>
     <body>
+    <script src="layout/scripts/jquery.min.js"></script>
     <script src="layout/scripts/remodal.js"></script>
     	<div class="mainDiv"align="center">
 	        <h1>Contact List</h1>
