@@ -7,9 +7,13 @@
     <head>
     	<link href="layout/styles/contact.css" rel="stylesheet" type="text/css" media="all">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Contact Manager Home</title>
+        <script src="layout/scripts/jquery-min.js"></script>
+        <link rel="stylesheet" href="layout/styles/remodal.css" rel="stylesheet" type="text/css" media="all">
+	    <link rel="stylesheet" href="layout/styles/remodal-default-theme.css" rel="stylesheet" type="text/css" media="all">
+	       <title>Contact Manager Home</title>
     </head>
     <body>
+    <script src="layout/scripts/remodal.js"></script>
     	<div class="mainDiv"align="center">
 	        <h1>Contact List</h1>
 	        <h3 id="CreateContact"><a href="newContact">New Contact</a></h3>
@@ -33,13 +37,23 @@
 					<td>${contact.telephone}</td>
 					<td>
 						<a class=" button edit" href="editContact?id=${contact.id}">Edit</a>
-						<a class="button delete" class=""href="deleteContact?id=${contact.id}">Delete</a>
+						<a class="button delete" href="#modal">Delete</a>
+						<!-- href=deleteContact?id=${contact.id} -->
 					</td>
 							
 	        	</tr>
 				</c:forEach>	        	
 			</table>
     	</div>
+    	<div class="remodal" data-remodal-id="modal">
+			  <button data-remodal-action="close" class="remodal-close"></button>
+			  <h1>Confirm delete?</h1>
+			  <p>
+			  </p>
+			  <br>
+			  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+			  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+		</div>
     	<br><br>
     	<center><a class=" button edit" href="http://localhost:8090/SpringMVC/">Voltar</a></center>
     </body>
