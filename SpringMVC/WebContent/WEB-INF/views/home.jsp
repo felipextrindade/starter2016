@@ -37,7 +37,7 @@
 					<td>${contact.telephone}</td>
 					<td>
 						<a class=" button edit" href="editContact?id=${contact.id}">Edit</a>
-						<a class="button delete" href="#modal">Delete</a>
+						<a class="button delete" href="#modal">Deletee</a>
 						<!-- href=deleteContact?id=${contact.id} -->
 					</td>
 							
